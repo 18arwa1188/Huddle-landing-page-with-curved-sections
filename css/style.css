@@ -1,0 +1,167 @@
+* {box-sizing: border-box}
+
+body {font-family: 'Open Sans', sans-serif; color: hsl(192, 100%, 9%)}
+
+.container {width: 85%; margin: 10px auto}
+
+@media (max-width: 768px) {
+    .container {width: 90%}
+}
+h1, h2, h3 {font-family: 'Poppins', sans-serif}
+
+input {
+    height: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 0;
+    color: white;
+    padding: 25px 60px;
+    margin-top: 10px;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 50px;
+}
+.img-section {width: 100%}
+/* Start Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div {display: flex; align-items: center}
+
+nav div i {
+    color: hsl(322, 100%, 66%);
+    font-size: 30px;
+    margin-right: 10px
+}
+nav input[type="button"] {
+    padding: 1.5% 2.5%;
+    color: hsl(322, 100%, 66%);
+    background-color: transparent;
+    border: 1px solid hsl(322, 100%, 66%);
+}
+/* End Nav */
+/* Start Build */
+.build {
+    width: 80%;
+    text-align: center;
+    margin: 150px auto 60px
+}
+@media (max-width: 768px) {
+    .build {width: 90%}
+}
+.build .text p {width: 50%; margin: 25px auto}
+
+@media (max-width: 768px) {
+    .build .text p {width: 100%}
+}
+.build img {width: 100%; margin: 80px auto}
+
+.build .numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .build .numbers {flex-direction: column}
+}
+.build .numbers div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .build .numbers div {margin: 40px auto}
+}
+.build .numbers div i {color: hsl(322, 100%, 66%); font-size: 25px}
+
+.build .numbers div h1 {font-size: 60px; font-weight: 700; margin: 0}
+
+.build .numbers div p {color: hsl(192, 100%, 9%, 50%)}
+/* End Build */
+/* Start The 3 Sections */
+.section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px
+}
+@media (max-width: 768px) {
+    .section .container {text-align: center; flex-direction: column}
+}
+.section .container .text {flex-basis: 45%}
+
+.section .container .text h2 {font-size: 30px}
+
+.section .container .text p {line-height: 1.4}
+
+.section .container img {width: 400px}
+
+@media (max-width: 768px) {
+    .section .container img {width: 300px; margin-top: 60px}
+}
+/* End The 3 Sections */
+/* Start Blue Section */
+.section.blue-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin: 60px auto 100px
+}
+.section.blue-section .background {background-color: #f6fbff}
+/* End Blue Section */
+/* Start Ready */
+.ready {margin: 150px auto; text-align: center}
+/* End Ready */
+/* Start Footer */
+footer {color: white; display: flex; flex-direction: column}
+
+footer .background {background-color: hsl(192, 100%, 9%)}
+
+footer .text {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 30px
+}
+@media (max-width: 768px) {
+    footer .text {flex-direction: column-reverse}
+}
+footer .text .right {flex-basis: 30%}
+
+footer .text .right div {display: flex; align-items: center}
+
+footer .text .right div i {margin-right: 20px; font-size: 30px}
+
+footer .text .right div:first-of-type h1 {margin: 0; font-size: 45px}
+
+footer .text p {line-height: 1.6; font-size: 15px}
+
+footer .text .right div:nth-of-type(2) i, 
+footer .text .right div:nth-of-type(3) i {font-size: 18px}
+
+footer .text .right div:nth-of-type(3) p {margin: 0px}
+
+footer .text .right div:nth-of-type(4) {margin-top: 80px}
+
+footer .text .left {flex-basis: 50%}
+
+footer .text .left p {width: 60%}
+
+@media (max-width: 768px) {
+    footer .text .left p {width: 100%}
+}
+footer .text .left div input {border-radius: 10px; padding: 20px 50px}
+
+footer .text .left div input[type="text"] {
+    background-color: white;
+    margin: 20px 25px 0 0;
+    width: 50%
+}
+@media (max-width: 768px) {
+    footer .text .left div input[type="text"] {width: 100%}
+
+    footer .text .left div input[type="button"] {float: right; margin-bottom: 100px}
+}
+/* End Footer */
